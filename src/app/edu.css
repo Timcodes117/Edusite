@@ -1,0 +1,604 @@
+
+*{
+    --def-color: #c51d38;
+    font-family: Poppins;
+    /* border: 2px solid red ; */
+    /* font-size: 0.9rem; */
+}
+
+* button:hover  {
+    opacity: 50%;
+    cursor: pointer;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(./Kanit-Light.ttf);
+}
+
+@font-face {
+    font-family: PoppinsB;
+    src: url(./Kanit-Light.ttf);
+}
+
+body{
+    background: white;
+}
+
+.loader{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: white;
+    justify-content: center;
+}
+
+.logo{
+    position: absolute;
+    left: 10px;
+    color: #c51d38;
+    font-family: PoppinsB !important;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    font-weight:bolder;
+}
+
+ .sp{
+    background: url(./images/school.png);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    margin-right: 5px;
+}
+
+.nav{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 10px;
+}
+
+header button{
+    width: 100px;
+    height: 35px;
+    background-color: var(--def-color);
+    border: none;
+    position: absolute;
+    right: 10px;
+}
+
+.hero{
+    height: 90vh;
+    min-height: 550px !important;
+    width: 100%;
+    background: linear-gradient(#ffffff81, #ffffff98), url(./images/pexels-monstera-6238087.jpg) no-repeat;
+    /* background: linear-gradient(#ffffff81, #ffffff98), url(./images/pexels-christina-morillo-1181359.jpg) no-repeat; */
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    background-position: center;
+    background-attachment: scroll;
+    overflow: hidden;
+    
+}
+
+.hero .herocontent{
+    margin-left: 20px;
+}
+
+.hero p .ml{
+    color: rgb(197, 29, 56);
+    position: relative;
+
+}
+.hero p .ml::after{
+    content: '';
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    background: url(./images/line.png) no-repeat;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    top: -85px;
+    left: 10px;
+ 
+}
+
+.searchInput{
+    width: 90%;
+    max-width: 450px;
+    height: 50px;
+    background: white;
+    display: flex;
+    border-radius: 10px;
+    color: black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.searchInput input{
+    display: flex;
+    flex: 70;
+    border: none;
+    /* border-radius: 10px; */
+    outline: none;
+    background: white;
+    margin-left: 10px;
+    font-size: 10px;
+    width: 50%;
+}
+
+.searchInput button{
+    display: flex;
+    border: none;
+    font-size: 13px;
+    flex: 30;
+    background: black;
+    border-radius: 5px;
+    height: 45px;
+    align-items: center;
+    margin-right: 3px;
+    justify-content: center;
+    color: white;
+}
+
+.info{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    font-size: 10px;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.courses{
+    width: 100%;
+    min-height: 400px;
+    margin-top: -150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.courses .course_box{
+    width: 80%;
+    max-width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* font-size: 15px; */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 59px 51px -34px gainsboro;
+}
+.courses .course_box:hover{
+    min-width: 210px;
+    min-height: 210px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    /* background: black; */
+    background-size: contain;
+}
+
+.about{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about .img{
+    width: 90%;
+    max-width: 500px;
+    height: 350px;
+    background: url(./images/img.jpg) no-repeat;
+    border: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.about .details{
+    width: 80%;
+    min-height: 350px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about .details button{
+    width: 120px;
+    height: 40px;
+    background: none;
+    border: 1px solid #c51d38;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #c51d38;
+}
+
+.our_courses{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.courseView{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.courseView .view{
+    width: 80%;
+    max-width: 300px;
+    min-height: 330px;
+    margin: 10px;
+    position: relative;
+    box-shadow: 0 59px 51px -34px gainsboro;
+    
+}
+
+.thumbnail1{
+    width: 100%;
+    height: 170px;
+    background: url(./images/pexels-olia-danilevich-4974920.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    
+}
+.thumbnail2{
+    width: 100%;
+    height: 170px;
+    background: url(./images/pexels-katerina-holmes-5905703.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    
+}
+.thumbnail3{
+    width: 100%;
+    height: 170px;
+    background: url(./images/pexels-jeshootscom-714698.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    
+}
+
+
+.author{
+    width: 100%;
+    /* height: 20px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.comment .author, .commentsmall .author{
+    width: 100%;
+    min-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 10px;
+    margin-top: -35px;
+
+}
+
+
+
+.view .profile{
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 100px;
+    background: url(./images/FpKsAV2X0AAX3NO.jfif);
+    margin-right: 10px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.comment .profile, .commentsmall .profile{
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+    background: url(./images/FB_IMG_16804755035917705.jpg);
+    margin-right: 10px;
+    background-size: cover;
+    /* position: absolute; */
+    /* top: -25px; */
+    margin-bottom: 10px;
+
+}
+
+.ratings{
+    font-size: 12px;
+    color: #c51d38;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.explainer{
+    width: 100%;
+    min-height: 80vh;
+    /* background: url(./images/pexels-christina-morillo-1181359.jpg); */
+    /* margin-bottom: 50px; */
+    background: white;
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.einfo{
+    width: 90%;
+    max-width: 400px;
+    font-size: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column !important;
+    height: 300px;
+}
+
+.evideo{
+    width: 90%;
+    max-width: 600px;
+    min-height: 400px;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#000000af, #000000af), url(./images/240_F_128130222_g4e9a6ZduqeKqjiI8aaFtFcOup7KB6ui.jpg);
+    font-size: 50px;
+    text-align: center;
+    background-size: cover;
+    /* background: black; */
+}
+
+
+.reviews{
+    min-height: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    background: ghostwhite;
+    flex-wrap: wrap;
+}
+.reviews .comment{
+    width: 80%;
+    max-width: 380px;
+    min-height: 300px;
+    font-size: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 59px 51px -34px gainsboro;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px;
+    
+}
+.reviews .commentsmall{
+    position: relative;
+    box-shadow: 0 59px 51px -34px gainsboro;
+    width: 80%;
+    max-width: 340px;
+    min-height: 250px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+
+.end{
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.end .frame{
+    width: 80%;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    background: #c51d38;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    z-index: 10;
+    position: relative;
+}
+.end .frame::after{
+    content: '';
+    width: 95%;
+    max-width: 350px;
+    min-height: 300px;
+    background: url(./images/mobile-book.png) no-repeat;
+    position: absolute;
+    top: -200px;
+    z-index: -1;
+    right: 0px;
+    background-size: contain;
+
+}
+
+.end .frame button{
+    border: none;
+    background-color: white;
+    width: 85%;
+    max-width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #c51d38;
+    border-radius: 2px;
+}
+.end .frame button:hover{
+    background: #410711;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    min-height: 150px;
+    background: rgb(35, 35, 35);
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+footer .lnxs{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100px;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+    max-width: 500px;
+    
+}
+
+
+footer .lnxs .fl{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100px;
+    color: whitesmoke;
+    font-size: 12px;
+    width: 20%;
+}
+
+footer .lnxs .fl a{
+    height: 40px;
+}
+footer .lnxs .fl a:hover{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* font-weight: 700; */
+    color: whitesmoke;
+    font-size: 11px;
+}
+
+#rev1{
+    background-image: url(./images/Rectangle\ 4390.png) !important;
+}
+#rev2{
+    background-image: url(./images/Rectangle\ 4388.png) !important;
+}
+#rev3{
+    background-image: url(./images/Rectangle\ 4387.png) !important;
+}
+
+@media screen and (max-width: 1011px) {
+    .courses{
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .nav{
+        display: none;
+    }
+
+    .frame button{
+        position: absolute;
+        bottom: 5px;
+        border-radius: 2px;
+    }
+
+    .hero{
+    background: linear-gradient(#ffffffb9, #ffffffaa), url(./images/pexels-monstera-6238087.jpg) no-repeat;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    background-position: center;
+    background-attachment: fixed;
+    }
+
+    .about .img{
+        height: 250px;
+    }
+
+    .einfo{
+        height: 150px;
+    }
+
+    .evideo{
+        min-height: 300px;
+    }
+}
+
+* a:hover{
+    cursor: pointer;
+}
+

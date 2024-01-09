@@ -1,0 +1,360 @@
+
+*{
+    --def-color: #c51d38;
+    font-family: Poppins;
+    /* border: 2px solid red ; */
+}
+
+* button:hover  {
+    opacity: 50%;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoppinsB;
+    src: url(../Poppins-Medium.ttf);
+}
+
+body{
+    background: white;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: none;
+    z-index: 95;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+}
+
+
+
+.logo{
+    position: absolute;
+    left: 10px;
+    color: #ffffff;
+    font-family: PoppinsB !important;
+    font-size: 20px;
+    font-weight:bolder;
+}
+
+.nav{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 10px;
+    color: white;
+}
+
+ .search{
+    width: 90%;
+    max-width: 600px;
+    height: 50px;
+    background: ghostwhite;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+        /* position: absolute; */
+    
+    z-index: 55;
+}
+
+.search input{
+    width: 90%;
+    height: 40px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+header button{
+    width: 100px;
+    height: 35px;
+    background: none;
+    border: 1px solid whitesmoke;
+    margin-left: 20px;
+    
+}
+
+.right{
+    height: 50px;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    position: absolute;
+    right: 10px;
+    
+}
+.profile{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    font-size: 10px;
+    max-width: 200px;
+    color: whitesmoke;
+}
+
+.avatar{
+    background: url(../images/img.jpg);
+    width: 30px;
+    background-size: cover;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+.hero{
+    width: 100%;
+    height: 550px;
+    background: radial-gradient(#00000044, #00000044), url(../images/pexels-karolina-grabowska-6958508.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 50px;
+}
+
+.head{
+    width: 100%;
+    height: 50px;
+}
+
+.courseView{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.courses{
+    width: 90% !important;
+    display: flex;
+    /* flex: 1; */
+    background: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course{
+    display: flex;
+    /* flex: 1; */
+    width: 95%;
+    max-height: 350px;
+    min-height: 350px;
+    max-width: 350px;
+    /* min-width: 400px; */
+    margin: 40px;
+    flex-direction: column;
+    position: relative;
+}
+
+.thumbnail{
+    border-radius: 10px 10px 0 0;
+    background: url(../images/FB_IMG_16804755035917705.jpg) no-repeat;
+    min-height: 200px !important;
+    background-size: cover;
+}
+
+.favourite{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background: #00000095;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.previewer{
+    width: 100%;
+    height: 100vh;
+    background: #000000b4;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.preview{
+    width: 80%;
+    min-height: 1500px;
+    background: whitesmoke;
+    z-index: 100;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vdbg{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#000000b4, #000000b4), url(../images/pexels-olia-danilevich-4974920.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.more{
+    min-width: 300px;
+    min-height: 200px;
+    height: 200px;
+    position: relative;
+    /* background: gray; */
+    margin: 10px;
+}
+
+.more .tmb{
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(#000000db, #000000db), url(../images/pexels-olia-danilevich-4974920.jpg);
+    display: flex;
+    flex: 1;
+    border-radius: 10px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc{
+    position: absolute;
+    bottom: 20px;
+    width: 30%;
+    color: whitesmoke;
+    margin-left: 10px;
+    font-size: 10px !important;
+}
+footer{
+    width: 100%;
+    min-height: 150px;
+    background: rgb(35, 35, 35);
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+footer .lnxs{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100px;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+    max-width: 500px;
+    
+}
+
+
+footer .lnxs .fl{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100px;
+    color: whitesmoke;
+    font-size: 12px;
+    width: 20%;
+}
+
+footer .lnxs .fl a{
+    height: 40px;
+}
+footer .lnxs .fl a:hover{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* font-weight: 700; */
+    color: whitesmoke;
+    font-size: 11px;
+}
+#d1{
+    background: url(./pexels-olia-danilevich-4974920.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#d2{
+    background: url(./Profile/d779375b2723ad661a0876ea2967e9c3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#d3{
+    background: url(./Profile/FB_IMG_16804755035917705.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#d4{
+    background: url(./Profile/cafe.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#d5{
+    background: url(./Profile/Screenshot_20230312-111329_Instagram.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+@media screen and (max-width: 800px){
+    .label{
+        margin-left: 10px;
+    }
+    
+    .label strong{
+        font-size: 40px !important;
+    }
+/*     
+    .search{
+        display: none;
+    } */
+    
+    .title{
+        margin-left: 10px !important;
+        font-size: 40px !important;
+    }
+    .ltitle{
+        margin-left: 10px !important;
+        /* font-size: 40px !important; */
+    }
+
+    .vdbg{
+        height: 300px;
+    }
+    .preview{
+        width: 100%;
+    }
+
+    .profile{display: none;}
+}
+

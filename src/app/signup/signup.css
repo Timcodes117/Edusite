@@ -1,0 +1,131 @@
+
+*{
+    --def-color: #c51d38;
+    --bright-color: #ff274b;
+    font-family: Poppins;
+    /* border: 2px solid red ; */
+}
+
+* button:hover  {
+    opacity: 50%;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoppinsB;
+    src: url(../Poppins-Medium.ttf);
+}
+
+.bg{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    flex: 30;
+    /* height: 100%; */
+    background: url(../images/pexels-drew-williams-3568520.jpg)  no-repeat;
+    background-size: cover;
+}
+
+.formpage{
+    display: flex;
+    flex-direction: column;
+    flex: 70;
+    height: 100vh;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background: white;
+    /* max-width: 650px; */
+    /* align-items: center; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+form{
+    width: 90%;
+    max-width: 700px;
+    margin-left: 50px;
+}
+
+.mfield{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+
+fieldset{
+    width: 95%;
+    display: flex;
+    /* max-width: 300px; */
+    /* flex: 1; */
+    max-height: 60px;
+    border-radius: 5px;
+    border: none;
+    /* margin-left: 20px; */
+    /* max-width: 500px; */
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+legend{
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #e82142;   
+}
+
+input[type="email"],input[type="text"],input[type="password"]{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    height: 40px;
+    border: 1px solid #e5e5ec;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    
+}
+
+input::placeholder{
+    color: grey;
+    font-size: 12px;
+}
+
+.mfield a{
+    color: #006eff;
+}
+
+input:focus{
+    outline: 1px solid #00a6ff;
+
+}
+
+form button{
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+    border: none;
+    color: grey;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .info{
+        display: none !important;
+    }
+
+    form{
+        margin-left: 0px !important;
+    }
+}
